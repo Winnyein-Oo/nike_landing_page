@@ -1,10 +1,13 @@
+import { hamburger } from "../assets/icons";
+import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
+
 const Nav = () => {
   return (
     <header className="w-full absolute z-10">
       <nav className="container flex justify-between items-center text-lg font-montserrat padding-x py-8 ">
         <a>
-          <img src="/src/assets/images/header-logo.svg" />
+          <img src={headerLogo} />
         </a>
         <ul className="flex gap-16 items-center text-slate-gray max-lg:hidden ">
           {navLinks.map((link) => (
@@ -19,7 +22,7 @@ const Nav = () => {
           <a href="#">Explore now</a>
         </div>
         <div className="lg:hidden">
-          <img src="/src/assets/icons/hamburger.svg" width={24} />
+          <img src={hamburger} width={24} />
         </div>
       </nav>
     </header>

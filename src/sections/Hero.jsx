@@ -1,3 +1,4 @@
+import { arrowRight } from "../assets/icons";
 import { bigShoe1 } from "../assets/images";
 import { shoes, statistics } from "../constants";
 import { useState } from "react";
@@ -23,11 +24,7 @@ const Hero = () => {
         <div className="mt-16 ">
           <button className="font-montserrat flex gap-4 items-center text-lg bg-coral-red text-white px-8 py-4 rounded-full">
             Shop now
-            <img
-              src="/src/assets/icons/arrow-right.svg"
-              width={24}
-              className="rounded-full"
-            />
+            <img src={arrowRight} width={24} className="rounded-full" />
           </button>
         </div>
 

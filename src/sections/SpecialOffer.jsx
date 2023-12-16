@@ -1,3 +1,4 @@
+import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
 
 const SpecialOffer = () => {
@@ -20,11 +21,7 @@ const SpecialOffer = () => {
         <div className="mt-14 flex gap-8">
           <button className="font-montserrat flex gap-4 items-center text-lg bg-coral-red text-white px-8 py-4 rounded-full">
             Shop now
-            <img
-              src="/src/assets/icons/arrow-right.svg"
-              width={24}
-              className="rounded-full"
-            />
+            <img src={arrowRight} width={24} className="rounded-full" />
           </button>
           <button className="font-montserrat flex gap-4 items-center text-lg text-slate-gray px-8 py-4 rounded-full border border-slate-gray">
             Learn more
