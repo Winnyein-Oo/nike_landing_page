@@ -1,10 +1,11 @@
 import { navLinks } from "../constants";
+import { headerLogo } from "../assets/images";
 const Nav = () => {
   return (
     <header className="w-full absolute z-10">
       <nav className="container flex justify-between items-center text-lg font-montserrat padding-x py-8 ">
         <a>
-          <img src="./src/assets/images/header-logo.svg" />
+          <img src={ headerLogo }  />
         </a>
         <ul className="flex gap-16 items-center text-slate-gray max-lg:hidden ">
           {navLinks.map((link) => (
